@@ -28,7 +28,7 @@ const getters = {
                   },
                   {
                     "menuName": "孙二",
-                    "menuUrl": "/one/page-one",
+                    "menuUrl": "/one/vue-this",
                     "menuIcon": "fa fa-id-badge",
                     "id": "2",
                     "menuId": "2",

@@ -5,8 +5,8 @@ export default [
     component: resolve => require(['../components/common/comming-soon.vue'], resolve)
   },
   {
-    path: '/one/page-one',
-    component: resolve => require(['../components/one/page-one.vue'], resolve)
+    path: '/one/vue-this',
+    component: resolve => require(['../components/one/vue-this.vue'], resolve)
   },
 
 

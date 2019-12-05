@@ -82,11 +82,11 @@
       </template>
       <div class="app-router-view">
         <div :class="displaySubMenus.length?(isCollapse ? 'right-content right-content-left-small':'right-content right-content-left-big'):'right-content right-content-left-none'">
-          <div v-loading="rightContentLoading" class="loading-box">
+          <div class="loading-box">
             <div class="bread-crumb-nav">
               <span v-for="(item,index) in breadCrumbList" :key="index" :index="index" v-html="item.name"></span>
             </div>
-            <router-view></router-view>
+            <router-view v-if="!rightContentLoading"></router-view>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@
         if (to.path == '/') {
           this.$router.push(this.routerPath);
         } else {
-          Vue.nextTick(() => {
+          this.$nextTick(() => {
             this.rightContentLoading = false;
           })
         }
