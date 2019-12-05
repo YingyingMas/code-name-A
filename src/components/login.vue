@@ -127,7 +127,7 @@
                           },
                           {
                             "menuName": "孙二",
-                            "menuUrl": "/b",
+                            "menuUrl": "/one/page-one",
                             "menuIcon": "fa fa-id-badge",
                             "id": "2",
                             "menuId": "2",
