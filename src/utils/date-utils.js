@@ -1,5 +1,24 @@
 export default {
   install(Vue) {
+    // 1. 添加全局方法或属性
+    Vue.myGlobalMethod = function () {
+
+    }
+    // 2. 添加全局资源
+    Vue.directive('my-directive', {
+      bind (el, binding, vnode, oldVnode) {
+
+      }
+    })
+
+    // 3. 注入组件选项
+    Vue.mixin({
+      created: function () {
+
+      }
+    })
+
+    // 4. 添加实例方法
     Vue.prototype.$dateUtil = {
       /**
        * 将日期格式化成指定格式的字符串
